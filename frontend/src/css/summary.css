@@ -1,0 +1,130 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.summary-modal {
+  background: #e8e8e8;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+
+  /* Hide scrollbar for Chrome, Safari, and Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+
+}
+h3{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.summary-modal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.summary-section {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #D2D2D2;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: #333;
+}
+
+.question-card {
+  background: #ffffff;
+  border: 1px solid #D2D2D2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.question-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #444;
+}
+
+.question-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal-footer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #ffffff;
+  border: 1px solid #D2D2D2;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #F4F4F4;
+  border: 1px solid #D2D2D2;
+}

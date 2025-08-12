@@ -1,0 +1,129 @@
+.invitation-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Segoe UI", sans-serif;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  border-radius: 12px;
+}
+
+.invitation-text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+  color: #222;
+}
+
+.invitation-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.invitation-text p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.invitation-text .highlight {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.get-started {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #222;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* .get-started:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+} */
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.ai-logo-container {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #93c5fd;
+  padding-left: 40px;
+}
+
+
+.ai-logo {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #d2d2d2;
+  background: radial-gradient(circle, #60a5fa, #a7d1ff);
+  border-radius: 50%;
+  animation: aiPulse 3s infinite ease-in-out;
+  box-shadow: 0 0 25px #93c5fd, 0 0 50px #707070;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes aiPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 25px #a7d1ff, 0 0 50px #60a5fa;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #a7d1ff, 0 0 70px #60a5fa;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px #a7d1ff, 0 0 50px #60a5fa;
+  }
+}
+
+.ai-text {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #414141;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .invitation-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .ai-logo-container {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

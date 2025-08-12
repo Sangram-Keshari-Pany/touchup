@@ -1,0 +1,82 @@
+.examSection {
+  width: 100%;
+  height: 20%;
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.currentQuestionBox {
+  width: 90%;
+  padding: 20px;
+  border: none;
+  font-size: 1.5rem;
+  color: #222222;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+.speakingIcon {
+  color: #1864ab;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+
+
+
+.controlIcons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+.iconBtn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1864ab;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.iconBtn:hover:not(.disabled) {
+  background: #1864ab;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(24, 100, 171, 0.6);
+}
+
+.iconBtn.disabled,
+.iconBtn[aria-disabled="true"] {
+  cursor: not-allowed;
+  color: #94a3b8;
+  box-shadow: none;
+  transform: none;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2;
+}
+
+.iconBtn svg {
+  display: block;
+}

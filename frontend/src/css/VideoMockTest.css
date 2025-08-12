@@ -1,0 +1,129 @@
+.mocktest-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Navbar */
+.mock-navbar {
+  height: 60px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mock-navbar h1 {
+  font-size: 18px;
+  color: #333;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Main Layout */
+.mock-content {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Video Section */
+.video-section {
+  flex: 2;
+  background: black;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.controls .btn {
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.controls .btn:hover {
+  background: #f0f0f0;
+}
+
+/* Instructions Panel */
+.instructions {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.instructions h2 {
+  margin-bottom: 10px;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.instructions li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+}
+
+.start-btn, .end-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background: #28a745;
+  color: white;
+}
+
+.end-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.start-btn:hover {
+  background: #218838;
+}
+
+.end-btn:hover {
+  background: #c82333;
+}
